@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+.red
+{color:red}
+.blue
+{color:blue}
+</style>
+<script type="text/javascript" src="jquery3.js"></script>
+</head>
+<body>
+<script>
+$(document).ready(
+function()
+{
+	$("#redbutton").click(function()
+			{
+	$("h1").removeClass("blue");
+	$("h1").addClass("red");
+	$("h1").html("<i>this is Red heading, after clicking the button</i>");
+			})
+$("#blubutton").click(
+function()
+{
+	$("h1").html("<i>this is Blue heading, after clicking the button</i>");
+	$("h1").removeClass("red");
+	$("h1").addClass("blue");
+})
+
+})
+</script>
+<h1>This is the default heading</h1>
+<input type="button"  id="blubutton" value="click here for blue"></input>
+<input type="button" id="redbutton" value="click here for red"></input>
+</body>
+
+</html>

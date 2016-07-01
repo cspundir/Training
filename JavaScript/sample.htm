@@ -1,0 +1,65 @@
+<html>
+<head>
+<style>
+.red
+	{
+	color:red;
+	font-size:24;
+	font-style:italic;
+	font-weight:bold;
+	}
+.blue
+	{
+	color:blue;
+	font-size:24;
+	font-style:italic;
+	font-weight:bold;
+	}
+
+</style>
+
+<script type="text/javascript" src="sample.js"></script>
+
+<script type="text/javascript" src="jquery3.js"></script>
+
+<script>
+function redd()
+{
+//$(document).ready(
+//		function()
+//		{
+		$("h1").removeClass("blue");
+		$("h1").addClass("red");
+		$("h1").html("This is a Red Heading")
+//		})
+}
+
+function bluee()
+{
+//$(document).ready(
+	//	function()
+		//{
+		$("h1").removeClass("red");
+		$("h1").addClass("blue");
+		$("h1").html("This is a Blue Heading")
+		//})
+}
+
+
+
+
+</script>
+
+</head>
+<body onload="loading()">
+<p><input type="button" value="hello....click here" onmouseover="click()" onclick="otherthings()"></input></p>
+
+<h1>this is a heading</h1>
+
+<input type="button" id="redd" value="change to red" onmouseover="redd()"></input>
+
+<input type="button" id="bluee" value="change to blue" onmouseover="bluee()"></input>
+
+</body>
+
+</html>
